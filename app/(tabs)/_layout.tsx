@@ -95,6 +95,13 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={30} name="person.fill" color={color} />,
         }}
       />
+      <Tabs.Screen
+        name="3ra-registro"
+        options={{
+          title: '3ra Registro',
+          tabBarIcon: ({ color }) => <IconSymbol size={34} name="sparkles" color={color} />,
+        }}
+      />
     </Tabs>
   );
 }

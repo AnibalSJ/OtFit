@@ -43,3 +43,21 @@ app-example
 /android
 
 /.vscode
+# MCP local config (contiene el token de acceso de Supabase)
+.mcp.json
+
+# AI tooling
+.qodo/
+.claude/
+.cursor/
+
+# Logs
+*.log
+logs/
+
+# OS / editores
+Thumbs.db
+desktop.ini
+*.swp
+
+.env
