@@ -1,50 +1,87 @@
-# Welcome to your Expo app 👋
+# OtFit 👗📱
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**AI-powered outfit suggestion app** — Upload photos of your clothes and let OtFit build outfits for you.
 
-## Get started
+> 🚧 Currently in active development
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## What is OtFit?
 
-2. Start the app
+OtFit is a mobile application that helps users discover outfit combinations from their own wardrobe. Users upload photos of their clothing items, and the app uses AI to analyze them and suggest complete, coherent outfits based on what they already own.
 
-   ```bash
-   npx expo start
-   ```
+No more standing in front of your closet not knowing what to wear.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Features
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- 📸 **Photo-based wardrobe** — Add clothing items by taking or uploading photos
+- 🤖 **AI outfit suggestions** — Get personalized outfit combinations generated from your wardrobe
+- 🗂️ **Wardrobe management** — Organize and browse your clothing catalog
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## Tech Stack
 
-```bash
-npm run reset-project
+| Layer | Technology |
+|---|---|
+| Mobile Framework | React Native + Expo |
+| Language | TypeScript |
+| AI Integration | AI Vision API for image analysis and outfit generation |
+| Navigation | Expo Router (file-based routing) |
+| Testing | Jest |
+
+---
+
+## Project Structure
+
+```
+OtFit/
+├── app/              # Screens and routing (Expo Router)
+├── components/       # Reusable UI components
+├── core/             # Business logic and AI integration
+├── hooks/            # Custom React hooks
+├── screens/          # App screens
+├── assets/           # Images and static files
+└── __tests__/        # Unit tests
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## Getting Started
 
-To learn more about developing your project with Expo, look at the following resources:
+### Prerequisites
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Node.js 18+
+- Expo CLI
+- Android emulator or physical device (or iOS simulator on Mac)
 
-## Join the community
+### Installation
 
-Join our community of developers creating universal apps.
+```bash
+# Clone the repository
+git clone https://github.com/AnaRianOwO/OtFit.git
+cd OtFit
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Install dependencies
+npm install
+
+# Start the development server
+npx expo start
+```
+
+Then scan the QR code with **Expo Go** on your phone, or press `a` to open the Android emulator.
+
+---
+
+## Roadmap
+
+- [x] Project architecture and setup
+- [ ] Wardrobe photo upload flow
+- [ ] AI outfit suggestion engine
+- [ ] User authentication
+- [ ] Outfit history and favorites
+- [ ] Style preferences and filters
+- [ ] Public launch on Google Play
+
